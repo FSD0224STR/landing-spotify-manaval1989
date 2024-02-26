@@ -1,0 +1,66 @@
+/* styles.css */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.plan-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.plan {
+  background: #FFFFFF;
+  border: 1px solid #ECECEC;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px; /* Adjust the width as per your layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.plan h2 {
+  color: #1DB954; /* Spotify green color */
+  margin-bottom: 10px;
+}
+
+.plan p {
+  color: #666666;
+  margin-bottom: 10px;
+}
+
+.plan ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.plan ul li {
+  background: #F8F8F8;
+  margin-bottom: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+button {
+  background-color: #1DB954;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+button:hover {
+  background-color: #1ED760;
+}
