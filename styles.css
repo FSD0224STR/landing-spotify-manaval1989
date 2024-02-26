@@ -1,66 +1,106 @@
-/* styles.css */
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-
-.plan-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-.plan {
-  background: #FFFFFF;
-  border: 1px solid #ECECEC;
-  border-radius: 10px;
-  padding: 20px;
-  width: 300px; /* Adjust the width as per your layout */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.plan h2 {
-  color: #1DB954; /* Spotify green color */
-  margin-bottom: 10px;
-}
-
-.plan p {
-  color: #666666;
-  margin-bottom: 10px;
-}
-
-.plan ul {
-  list-style: none;
-  padding: 0;
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-.plan ul li {
-  background: #F8F8F8;
-  margin-bottom: 5px;
-  padding: 10px;
-  text-align: center;
-}
-
-button {
-  background-color: #1DB954;
+  background-color: black;
   color: white;
-  border: none;
-  padding: 10px 20px;
-  text-transform: uppercase;
+}
+.plans {
+  display: block;
+}
+.h2Plans {
+  font-size: 40px;
+  letter-spacing: -1.6px;
+  color: rgb(255, 255, 255);*/
+  font-size: 32px;
   font-weight: bold;
-  cursor: pointer;
-  border-radius: 20px;
+  letter-spacing: -1.28px;
+  line-height: 1;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+}
+.h3Plans {
+  color: rgb(255, 255, 255);*/
+  font-size: 16px;
+  font-weight: normal;
+  margin: 16px 0px 32px;
+  text-align: center;
+  padding: 0px;
+  box-sizing: border-box;
+  margin-block: 0px;
+}
+.chars {
+  padding: 15px 30px;
+    background: linear-gradient(rgb(18, 18, 18), rgb(18, 18, 18)) padding-box padding-box, linear-gradient(to right, rgb(176, 13, 110), rgb(8, 71, 145)), border-box border-box;
+    border-radius: 12px;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-image: initial;
+    border-left: 4px solid rgb(176, 13, 110) !important;
+    border-right: 4px solid rgb(8, 71, 145) !important;
+    display: flex;
+    align-items: center;
+    padding: 0px 30px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    flex-direction: column;
+    margin: 32px auto 48px;
+    text-align: inherit;
+    background: linear-gradient(rgb(18, 18, 18), rgb(18, 18, 18)) padding-box padding-box, linear-gradient(to right, rgb(176, 13, 110), rgb(8, 71, 145)), border-box border-box;
+    border-radius: 12px;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    border-image: initial;
+    border-left: 2px solid rgb(176, 13, 110) !important;
+    border-right: 2px solid rgb(8, 71, 145) !important;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  justify-content: center;
+  margin: 30px 0px 26px;
+  gap: 0px 32px;
+  box-sizing: border-box;
 }
 
-button:hover {
-  background-color: #1ED760;
+.i2Cards {
+  display: flex;
+  border: 2px solid grey;
+  flex-direction: column;
+  border-style: solid;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.h3Cards{
+  padding: 9px 7px;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: var(--text-base, 12px);
+    line-height: 13.75px;
+    border-radius: 2px;
+    color: rgb(0, 0, 0);
+    background: rgb(255, 210, 215);
+}
+.cardsTitle {
+  width: 100%;
+  display: grid;
+  align-items: flex-end;
+  grid-template-columns: 65% 35%;
+}
+
+.students {
+  display: flex;
+  border: 2px solid grey;
+}
+
+.duo {
+  display: flex;
+  border: 2px solid grey;
+}
+
+.family {
+  display: flex;
+  border: 2px solid grey;
 }
