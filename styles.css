@@ -5,20 +5,35 @@ body {
 .plans {
   display: block;
 }
+.headPlans {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 0;
+  position: relative;
+}
 .h2Plans {
+  display: flex;
+  flex-wrap: wrap;
   font-size: 40px;
   letter-spacing: -1.6px;
-  color: rgb(255, 255, 255);*/
-  font-size: 32px;
+  color: rgb(255, 255, 255);
   font-weight: bold;
   letter-spacing: -1.28px;
   line-height: 1;
   text-align: center;
-  margin: 0px;
+  margin: 0px auto;
+  margin-bottom: 10px;
   padding: 0px;
+  max-width: 100vh;
+  justify-content: center;
 }
 .h3Plans {
-  color: rgb(255, 255, 255);*/
+  display: flex;
+  flex-wrap: wrap;
+  color: rgb(255, 255, 255);
   font-size: 16px;
   font-weight: normal;
   margin: 16px 0px 32px;
@@ -26,81 +41,108 @@ body {
   padding: 0px;
   box-sizing: border-box;
   margin-block: 0px;
+  max-width: 100vh;
 }
 .chars {
   padding: 15px 30px;
-    background: linear-gradient(rgb(18, 18, 18), rgb(18, 18, 18)) padding-box padding-box, linear-gradient(to right, rgb(176, 13, 110), rgb(8, 71, 145)), border-box border-box;
-    border-radius: 12px;
-    border-top: 4px solid transparent;
-    border-bottom: 4px solid transparent;
-    border-image: initial;
-    border-left: 4px solid rgb(176, 13, 110) !important;
-    border-right: 4px solid rgb(8, 71, 145) !important;
-    display: flex;
-    align-items: center;
-    padding: 0px 30px;
-    box-sizing: border-box;
-    color: rgb(255, 255, 255);
-    flex-direction: column;
-    margin: 32px auto 48px;
-    text-align: inherit;
-    background: linear-gradient(rgb(18, 18, 18), rgb(18, 18, 18)) padding-box padding-box, linear-gradient(to right, rgb(176, 13, 110), rgb(8, 71, 145)), border-box border-box;
-    border-radius: 12px;
-    border-top: 2px solid transparent;
-    border-bottom: 2px solid transparent;
-    border-image: initial;
-    border-left: 2px solid rgb(176, 13, 110) !important;
-    border-right: 2px solid rgb(8, 71, 145) !important;
+  background: linear-gradient(rgb(18, 18, 18), rgb(18, 18, 18)) padding-box
+      padding-box,
+    linear-gradient(to right, rgb(176, 13, 110), rgb(8, 71, 145)),
+    border-box border-box;
+  border-radius: 12px;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-image: initial;
+  border-left: 4px solid rgb(176, 13, 110) !important;
+  border-right: 4px solid rgb(8, 71, 145) !important;
+  display: flex;
+  align-items: center;
+  padding: 0px 30px;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  flex-direction: column;
+  margin: 32px auto 48px;
+  text-align: inherit;
+  background: linear-gradient(rgb(18, 18, 18), rgb(18, 18, 18)) padding-box
+      padding-box,
+    linear-gradient(to right, rgb(176, 13, 110), rgb(8, 71, 145)),
+    border-box border-box;
+  border-radius: 12px;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  border-image: initial;
+  border-left: 2px solid rgb(176, 13, 110) !important;
+  border-right: 2px solid rgb(8, 71, 145) !important;
+  max-width: 100vh;
 }
-.cards {
-  display: grid;
-  grid-template-columns: repeat(6,1fr);
+.flexContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
-  margin: 30px 0px 26px;
-  gap: 0px 32px;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 100vh;
   box-sizing: border-box;
 }
 
-.i2Cards {
+.pricingCards {
   display: flex;
   border: 2px solid grey;
+  border-radius: 10px;
   flex-direction: column;
-  border-style: solid;
-  box-sizing: border-box;
-  width: 100%;
   max-width: 450px;
+  padding: 16px;
+  box-sizing: border-box;
   box-shadow: none;
   background-color: transparent;
+  margin: 20px;
 }
 
-.h3Cards{
+.h3Cards {
   padding: 9px 7px;
-    font-weight: 700;
-    text-transform: capitalize;
-    font-size: var(--text-base, 12px);
-    line-height: 13.75px;
-    border-radius: 2px;
-    color: rgb(0, 0, 0);
-    background: rgb(255, 210, 215);
+  font-weight: 700;
+  text-transform: capitalize;
+  font-size: var(--text-base, 12px);
+  line-height: 13.75px;
+  border-radius: 2px;
+  color: rgb(0, 0, 0);
+  background: rgb(255, 210, 215);
+  max-width: fit-content;
 }
 .cardsTitle {
   width: 100%;
-  display: grid;
+  display: flex;
+  flex-direction: row;
   align-items: flex-end;
-  grid-template-columns: 65% 35%;
+  justify-content: space-between;
+  flex-wrap: nowrap;
 }
-
-.students {
-  display: flex;
-  border: 2px solid grey;
+.buttonCards {
+  margin-top: 20px;
 }
-
-.duo {
-  display: flex;
-  border: 2px solid grey;
+#buttonCardsInd {
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: rgb(255, 210, 215);
+  border: 0px;
+  border-radius: 500px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  padding: 10px;
+  align-self: center;
+  inline-size: 100%;
 }
-
-.family {
-  display: flex;
-  border: 2px solid grey;
+.disclaimerCards {
+  text-align: center;
+  padding-top: 12px;
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
 }
