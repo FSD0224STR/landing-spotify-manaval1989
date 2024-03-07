@@ -8,7 +8,7 @@
   </head>
   <body>
     <!--Este es el menu de navegación-->
-    <header>
+    <nav>
       <div class="logo"></div>
       <div class="navbar">
         <ul class="menu">
@@ -20,7 +20,7 @@
           <li>Iniciar sesión</li>
         </ul>
       </div>
-    </header>
+    </nav>
 
     <!--Esta sección es publicitaria-->
     <section class="marketing">
@@ -80,7 +80,7 @@
             <li>Cancelas cuando quieras</li>
           </ul>
           <div class="buttonCards">
-            <button id="buttonCardsInd">Prueba Gratis</button>
+            <button id="indiv">Prueba Gratis</button>
           </div>
           <p class="disclaimerCards">
             Gratis durante 2 meses. Luego, 10,99 € al mes. Oferta disponible
@@ -90,18 +90,22 @@
         </div>
 
         <div class="pricingCards">
-          <h3 class="h3Cards">Gratis Durante 1 Mes</h3>
+          <h3 class="h3Cards" id="h3Free">Gratis Durante 1 Mes</h3>
           <div class="cardsTitle">
-            <h3 class="premium">Premium para Estudiantes</h3>
-            <p class="cost">GRATIS</p>
-            <p class="duration">PARA 1 MES</p>
+            <h3 class="premium">Premium<br />para Estudiantes</h3>
+            <div class="price">
+              <p class="cost">GRATIS</p>
+              <p class="duration">PARA 1 MES</p>
+            </div>
           </div>
           <ul class="ulCards">
             <li>1 cuenta Premium verificada</li>
             <li>Descuento para estudiantes que cumplan los requisitos</li>
             <li>Cancelas cuando quieras</li>
           </ul>
-          <div class="buttonCardsStu"></div>
+          <div class="buttonCards">
+            <button id="student">Prueba Gratis</button>
+          </div>
           <p class="disclaimerCards">
             Gratis durante 1 mes. Luego, 5,99 € al mes. Oferta disponible solo
             para estudiantes matriculados en un centro de educación superior
@@ -110,34 +114,42 @@
         </div>
 
         <div class="pricingCards">
-          <div class="studentsTitle">
-            <h3 class="premium">Premium Duo</h3>
-            <p class="cost">14,99 €</p>
-            <p class="duration">AL MES</p>
+          <div class="cardsTitle">
+            <h3 class="premium">Premium<br />Duo</h3>
+            <div class="price">
+              <p class="cost">14,99€</p>
+              <p class="duration">AL MES</p>
+            </div>
           </div>
           <ul class="ulCards">
             <li>2 cuentas Premium</li>
             <li>Cancelas cuando quieras</li>
           </ul>
-          <div class="buttonCards stu"></div>
-          <p class="disclaimerCards">
-            Para parejas que convivan. Consulta las condiciones.
-          </p>
+          <div class="buttonCards">
+            <button id="duo">Contrata Ya</button>
+          </div>
+          <p class="disclaimerCards">Para parejas que convivan.</p>
         </div>
 
         <div class="pricingCards">
-          <div class="studentsTitle">
-            <h3 class="premium">Premium Familiar</h3>
-            <p class="cost">17,99 €</p>
-            <p class="duration">AL MES</p>
+          <div class="cardsTitle">
+            <h3 class="premium">Premium<br />Familiar</h3>
+            <div class="price">
+              <p class="cost">17,99€</p>
+              <p class="duration">AL MES</p>
+            </div>
           </div>
           <ul class="ulCards">
-            <li>Hasta 6 cuentas Premium</li>
-            <li>Bloquea la música explícita</li>
+            <li>Hasta 6 cuentas premium</li>
+            <li>Controla el contenido etiquetado como explicito</li>
             <li>Cancelas cuando quieras</li>
           </ul>
-          <div class="buttonCards stu"></div>
-          <p class="disclaimerCards"></p>
+          <div class="buttonCards">
+            <button id="family">Contrata Ya</button>
+          </div>
+          <p class="disclaimerCards">
+            Para hasta 6 miembros de una familia que convivan.
+          </p>
         </div>
       </div>
     </section>
